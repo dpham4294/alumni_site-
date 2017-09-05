@@ -17,6 +17,83 @@
   
 </head>
 
+<style>
+  h {
+    font-size: 30px;
+    color: #B22222;
+  }
+  
+  .button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #4682B4;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .agenda .agenda-date { width: 170px; }
+  .agenda .agenda-date .dayofmonth {
+    width: 40px;
+    font-size: 28px;
+    line-height: 36px;
+    float: left;
+    text-align: right;
+    margin-right: 10px; 
+  }
+  .agenda .agenda-date .shortdate {
+    font-size: 0.75em; 
+  }
+  
+  .agenda .agenda-time { width: 140px; } 
+
+  .creed {
+    text-align: right;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 24px;
+    color: #DAA520;
+    line-height: 80%;
+  }
+  
+  .creed_buddha {
+    text-align: right;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 24px;
+    color: #DAA520;
+  }
+</style>
+
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -38,8 +115,172 @@
   </nav>
   
   <br></br>
+  <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="/images/ad_group.jpg" alt="25th Anniversary and Alumni Dinner" style="width: 100%; height: 450px">
+        <div class="carousel-caption">
+          <h3 style="font-family: 'Monotype Corsiva', cursive; font-size: 38px; border: 2px solid #800000; padding-top: 10px">⚜️ Alterum Alterius Auxilio Eget ⚜️</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/images/gc17.jpg" alt="Grand Council 2017" style="width:100%; height: 450px">
+        <div class="carousel-caption">
+          <h3 style="font-family: 'Monotype Corsiva', cursive; font-size: 38px; border: 2px solid #800000; padding-top: 10px">⚜️ Alterum Alterius Auxilio Eget ⚜️</h3>        </div>
+      </div>
+    
+      <div class="item">
+        <img src="/images/nerc16_copy.jpg" alt="NERC 2016" style="width:100%; height: 450px">
+        <div class="carousel-caption">
+          <h3 style="font-family: 'Monotype Corsiva', cursive; font-size: 38px; border: 2px solid #800000; padding-top: 10px">⚜️ Alterum Alterius Auxilio Eget ⚜️</h3>        </div>
+      </div>
+      <div class="item">
+        <img src="/images/ad_alumni_copy.jpg" alt="Alumni at 25th Anniversary" style="width:100%; height: 450px">
+        <div class="carousel-caption">
+          <h3 style="font-family: 'Monotype Corsiva', cursive; font-size: 38px; border: 2px solid #800000; padding-top: 10px">⚜️ Alterum Alterius Auxilio Eget ⚜️</h3>        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
   <br></br>
-  <br></br>
+  <div class="row" style="margin-left: 5%; margin-right: 5%">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="height: 500px; border-left: 4px solid #DAA520; border-right: 2px solid #DAA520">
+      <div style="text-align: center">
+        <h style="font-family: 'Monotype Corsiva', cursive">Congratulations Class of 2017!</h>
+        <div>
+          <img src="/images/class2017.jpg" alt="Class of 2017" style="height: 100%; width: 100%">
+        </div>
+        <p style="font-family: Georgia; font-size: 15px; text-align: justify; margin-top: 8px">On May 16 of this past year, 16 of our Brothers graduated from the Ernest Mario School of Pharmacy at Rutgers University.</p>
+        <div style="text-align: right">
+          <a href="#"><button class="button"><span>Read More</span></button></a>   
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="height: 500px; border-right: 4px solid #DAA520; border-left: 2px solid #DAA520">
+      <div style="text-align: right">
+        <h style="font-family: Lucida Console"><b>UPCOMING EVENTS</b></h>
+        <div>
+           <div class="agenda">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered" style="background-color: #FAF0E6">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Single event in a single day -->
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">13</div>
+                            <div class="dayofweek">Wednesday</div>
+                            <div class="shortdate text-muted">September 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            7:30 PM - 9:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Alumni Panel Rush Event
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">14</div>
+                            <div class="dayofweek">Thursday</div>
+                            <div class="shortdate text-muted">September 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            9:00 PM 
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Conference Call
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">16</div>
+                            <div class="dayofweek">Saturday</div>
+                            <div class="shortdate text-muted">September 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                North Eastern Regional Olympics (NERO)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">6</div>
+                            <div class="dayofweek">Friday</div>
+                            <div class="shortdate text-muted">October 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            6:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Pharmacy Building Reopening
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">21</div>
+                            <div class="dayofweek">Saturday</div>
+                            <div class="shortdate text-muted">October 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            12:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Homecoming Footbal Game (Rutgers v. Purdue)
+                            </div>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 70px">
+          <p class="creed">"A man should first direct himself in the way he should go;</p>
+          <p class="creed">only then should he instruct others."</p>
+          <p class="creed_buddha">- Buddha</p>
+        </div>
+      </div>
+    </div>
   
   <div class="footer">
     <div class="row">
