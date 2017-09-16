@@ -17,6 +17,11 @@
   <script type="text/javascript" src="script.js"></script>
   
   <style>
+  
+    li a.active {
+      background-color: #DCDCDC;
+      color: white;
+    }
     .center-block {
         display: table;
         margin: 10%;
@@ -41,13 +46,13 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#" title="Brand"><img style="max-width: 142px; margin-top: -18px; margin-left: 5px;" src="/images/logo1.jpg"></a>
+        <a class="navbar-brand" href="index.html" title="Brand"><img style="max-width: 142px; margin-top: -18px; margin-left: 5px;" src="/images/logo1.jpg"></a>
       </div>
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="brothers.html">Brothers</a></li>
+        <li><a class="active" href="brothers.html">Brothers</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
       <!--<ul class="nav navbar-nav navbar-right">
