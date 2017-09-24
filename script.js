@@ -1,5 +1,7 @@
-
-if(screen.width<=1000) {
+if(screen.width>=700) {
+    document.write("<style>body{zoom:60%;}</style>");
+}
+if(screen.width>=1100) {
     document.write("<style>body{zoom:90%;}</style>");
 }
 if(screen.width>=1300) {
