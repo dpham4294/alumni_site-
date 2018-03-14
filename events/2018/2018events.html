@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ΦΔΧ - Gallery</title>
+	<title>ΦΔΧ - Events</title>
   	<meta charset="UTF-8">
  	<meta name="description" content="Over 250 distinguished members have been inducted as an alumunus from the Beta Nu Chapter of Phi Delta Chi.">
   	<meta name="keywords" content="Phi Delta Chi, Beta Nu, Alumni, Rutgers University, Ernest Mario, School of Pharmacy, co-ed, professional, pharmacy, fraternity, pledge class">
@@ -15,7 +15,73 @@
 	<link rel="shortcut icon" href="/img/crest.ico">
 	
 	<style>
-
+	.event_title {
+        font-size: 24px;
+        color: #ac981a;
+        font-weight: 400;
+    }
+    
+    .event_date {
+        color: #ac981a;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .pic {
+        height: 90%;
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #DCDCDC;
+        border-radius: 6px;
+        margin-top: 5px;
+    }
+    
+    .description {
+        margin-top: 50px;
+        font-size: 16px;
+        font-family: Verdana;
+        text-align: justify;
+    }
+    
+    .button {
+      display: inline-block;
+      border-radius: 6px;
+      background-color: #B22222;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      width: 130px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+  
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
 	</style>
 	
 </head>
@@ -53,7 +119,7 @@
 			<div class="row">
 				<div class="span10">
 				    <h2 style="color: #FFF; font-family: Jazz LET, fantasy; font-size: 48px; margin-top: 8%; padding-bottom: -5%">
-				        Photo Albums
+				        Events & Updates
 				    </h2>
 				</div>
 			</div>
