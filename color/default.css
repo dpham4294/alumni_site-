@@ -55,19 +55,19 @@ ul#menu-main > li > a:focus,ul#menu-main > li > a:active, ul#menu-main > li > a.
 
 /* works */
 #filters ul li a:hover h5, #filters ul li a.active h5 {
-	background: #ac981a;
-	border-color: #ac981a;
+	background: #B22222;
+	border-color: #B22222;
 }
 
 .portfolio .portfolio-overlay {
-	background: #ac981a;
+	background: #B22222;
 }
 
 /* icon */
 i.icon-bgdark:hover {
-	background: #ac981a;
+	background: #B22222;
 }
 
 i.icon-bgdark.active {
-	background: #ac981a;
+	background: #B22222;
 }
