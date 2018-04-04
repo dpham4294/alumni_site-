@@ -857,8 +857,7 @@ section#about {
 }
 
 .eboard_pic {
-    width: 150px;
-    height: 220px;
+    width: 100%;
     border-radius: 100%;
     border: 2px solid #800000;
   }
